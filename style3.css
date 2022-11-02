@@ -1,0 +1,277 @@
+html {
+  background-color: rgb(255, 247, 239);
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.main-area p {
+  font-size: 100%;
+  text-align: right;
+  text-indent: 25px;
+  line-height: 1.5;
+}
+
+.main-area h1 {
+  font-size: 150%;
+  font-weight: bolder;
+  font-style: italic;
+  letter-spacing: 2px;
+  word-spacing: 10px;
+  text-shadow: 2px 10px 20px black;
+  text-transform: uppercase;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Banner overlay */
+
+.image-banner {
+  position: relative;
+}
+
+.image-banner img {
+  display: block;
+}
+
+.banner-description {
+  position: absolute;
+  bottom: 0%;
+  left: 0;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.50);
+  padding: 15px 20px;
+}
+
+.container {
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgb(255, 255, 255);
+  padding-left: 40px;
+  padding-right: 40px;
+  box-sizing: border-box;
+  background-image: url(/Images/Figma-logo.svg);
+  background-repeat: repeat-x;
+  background-position: right center;
+}
+
+header {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: rgb(3, 52, 3);
+}
+
+/* Site Navigation */
+
+.site-nav {
+  margin-top: 20px;
+}
+
+.site-nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+.site-nav li {
+  list-style: none;
+  float: left;
+  margin-right: 5px;
+}
+.site-nav a {
+  display: block
+  text-decoration: none;
+  color: rgb(3, 52, 3);
+  padding: 10px 20px;
+  border: 2px solid rgb(3, 52, 3);
+}
+
+.site-nav a:hover {
+  background-color: lightblue;
+}
+
+header h1 {
+  margin: 0;
+}
+
+header p {
+  margin: 0;
+}
+
+.content-area {
+  border-top: 3px solid rgb(75, 171, 110);
+  border-bottom: 3px solid rgb(75, 171, 110);
+}
+
+.main-area {
+  width: 66%;
+  float: left;
+  padding-right: 40px;
+  box-sizing: border-box;
+}
+
+/* Table styles */
+
+table {
+  border-spacing: 0;
+  margin-bottom: 20px;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.col-item-name {
+  width: 60%;
+}
+
+.col-quantity,
+.col-price {
+  width: 20%;
+}
+
+table th {
+  text-align: left;
+  background-color: rgb(120, 163, 120);
+  color: black;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.30);
+}
+
+table th,
+table td {
+  border: 1px solid rgb(120, 163, 120);
+  padding: 10px;
+
+}
+
+table tbody tr:nth-child(odd) td {
+  background-color: rgba(106, 128, 100, 0.187);
+}
+
+table.grocery-list tr :nth-child(2),
+table.grocery-list tr :nth-child(3) {
+  text-align: center;
+}
+
+/* /Table styles */
+
+.sidebar {
+  width: 34%;
+  float: left;
+  box-sizing: border-box;
+  font-size: 90%;
+  padding: 20px 40px;
+  background-color: #e5e9dc;
+  background-image: linear-gradient(to bottom, #e5e9dc, #FFF);
+}
+
+footer {
+  text-align: center;
+  font-size: 85%;
+  color: rgb(149, 149, 149);
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+.group:before,
+.group:after {
+  content: '';
+  display: table;
+}
+
+.group:after {
+  clear: both;
+}
+
+.group {
+  zoom: 1;
+}
+
+/* Form styles */
+
+form {
+  background-color: rgba(211, 211, 211, 0.301);
+  padding: 30px 40px;
+}
+
+.hidden {
+  position: absolute;
+  height: 0;
+  width: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+
+input,
+select {
+  font-family: Tahoma, sans-serif;
+  font-size: 100%;
+}
+
+input[type="email"],
+input[type="password"],
+select {
+  width: 100%;
+  display: block;
+  box-sizing: border-box;
+  padding: 0 10px;
+  height: 40px;
+  margin-bottom: 15px;
+  border: 1px solid rgba(195, 195, 195, 0.511);
+  outline: none;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus {
+  border: 1px solid green;
+  box-shadow: inset 2px 2px 2px rgba(0, 0, 0, .13);
+}
+
+input[type="submit"] {
+  width: 100%;
+  display: block;
+  box-sizing: border-box;
+  background-color: rgba(0, 128, 0, 0.301);
+  color: white;
+  padding: 10px;
+  border: 1px solid rgb(120, 163, 120);
+  border-radius: 3px;
+  margin-bottom: 10px;
+  outline: none;
+}
+
+input[type="submit"]:hover,
+input[type="submit"]:focus
+ {
+  border: 1px solid rgb(75, 171, 110);
+  background-color: rgb(17, 75, 33);
+}
+
+.checkbox-text {
+  font-size: 85%;
+  color: rgb(98, 98, 98);
+}
+
+/* / Form styles */
+
+/* Birds Background Demo */
+
+.birds {
+  background: antiquewhite url(/Images/life-on-the-tracks.jpg) center center no-repeat;
+  background-size: cover;
+  text-align: center;
+  padding: 100px 0;
+}
+
+.birds p {
+  margin: 0;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+/* End Birds Background Demo */
